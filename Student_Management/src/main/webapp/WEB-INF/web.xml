@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AddStudentControler</servlet-name>
+  	<display-name>AddStudentControler</display-name>
+  	<description></description>
+  	<servlet-class>com.kmbb.controler.AddStudentControler</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddUserControler</servlet-name>
+  	<display-name>AddUserControler</display-name>
+  	<description></description>
+  	<servlet-class>com.kmbb.controler.AddUserControler</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddSubjectControler</servlet-name>
+  	<display-name>AddSubjectControler</display-name>
+  	<description></description>
+  	<servlet-class>com.kmbb.controler.AddSubjectControler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddStudentControler</servlet-name>
+  	<url-pattern>/addStudentControler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddUserControler</servlet-name>
+  	<url-pattern>/addUserControler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddSubjectControler</servlet-name>
+  	<url-pattern>/addSubjectControler</url-pattern>
+  </servlet-mapping>
 </web-app>

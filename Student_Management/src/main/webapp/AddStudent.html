@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="addStudentControler" method="POST">
+		Regd No.<input type="Number" name="regdNo"><br><br>
+		Name:<input type="text" name="name"><br><br>
+		Branch:<select id = "branch" name="branch">
+               <option value = "CSE">CSE</option>
+               <option value = "EE">EE</option>
+               <option value = "CIVIL">CIVIL</option>
+               <option value = "MECH">MECH</option>
+             </select><br><br>
+        Email:<input type="text" name="email"><br><br>
+        Phone:<input type="Number" name="phone"><br><br>
+        Parent Phone:<input type="Number" name="parentPhone"><br><br>
+        Gender:<select name="gender">
+        	<option value="MALE">Male</option>
+        	<option value="FEMALE">Female</option>
+        </select><br><br>
+        DOB:<input type="date" name="dob"><br><br>
+        Matriculation:<input type="Number" name="matriculation" step="0.01" ><br><br>
+        Intermediate:<input type="Number" name="intermediate" step="0.01"><br><br>
+        Address:<input type="text" name="address"><br><br>
+        <input type="submit" name="">
+	</form>
+</body>
+</html>
