@@ -1,10 +1,13 @@
 package com.kmbb.controler;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.kmbb.model.AddSubjectDao;
 
 /**
  * Servlet implementation class AddSubjectContoler
@@ -55,6 +58,11 @@ public class AddSubjectControler extends HttpServlet {
 		addSubject.subject = request.getParameter("subject");
 		addSubject.branch = request.getParameter("branch");
 		addSubject.shortName = request.getParameter("shortName");
+		
+		new AddSubjectDao().addSubject(addSubject);
+		request.setAttribute("result", "true");
+		request.getRequestDispatcher("AddSubject.jsp").forward(request, response);
+		
 		
 	}
 
