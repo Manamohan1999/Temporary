@@ -53,6 +53,8 @@ public class AddSubjectControler extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		String status=request.getParameter("vflag");
+//		System.out.println(status);
 		AddSubjectControler addSubject=new AddSubjectControler();
 		addSubject.subjectID = request.getParameter("subjectID");
 		addSubject.subject = request.getParameter("subject");
